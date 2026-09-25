@@ -1,0 +1,175 @@
+{
+  "status": "done",
+  "result": {
+    "schema_version": "1.2",
+    "video": {
+      "id": "7685379388979875085",
+      "title": "cat's outta the bag. see you 10.22. 🎙️@sirarthurmeows ",
+      "channel": "starbucks",
+      "license": "NA",
+      "duration_s": 6.3,
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@starbucks/video/7685379388979875085",
+      "upload_date": "20260914",
+      "description": "cat's outta the bag. see you 10.22. 🎙️@sirarthurmeows ",
+      "tags": [],
+      "music": {
+        "track": "original sound - Starbucks",
+        "artists": [
+          "Starbucks"
+        ]
+      },
+      "stats": {
+        "view_count": 12000000,
+        "like_count": 539800,
+        "comment_count": 2603,
+        "repost_count": 182900,
+        "save_count": 48441,
+        "channel_follower_count": null,
+        "channel_is_verified": null,
+        "as_of": 1790366111
+      }
+    },
+    "timing": {
+      "fetch_s": 2.5,
+      "split_s": 0.7,
+      "asr_s": 0.7,
+      "chunks_s": 3.6,
+      "story_s": 1.3,
+      "total_s": 8.1
+    },
+    "speech": {
+      "segments": 2,
+      "speakers": 1,
+      "transcript": [
+        {
+          "start": 0.08,
+          "end": 2.72,
+          "speaker": "SPEAKER_00",
+          "text": "Arthur Please don't do that."
+        },
+        {
+          "start": 4.4,
+          "end": 5.2,
+          "speaker": "SPEAKER_00",
+          "text": "You know why."
+        }
+      ]
+    },
+    "chunks": {
+      "total": 1,
+      "ok": 1,
+      "errors": []
+    },
+    "analysis": {
+      "summary": "A black cat with glowing eyes walks across a marble surface to reveal a limited-edition Starbucks 'Black Cat Frappuccino' drink, teased for release on October 22nd.",
+      "story": {
+        "premise": "A mysterious black cat acts as the guardian or mascot for a new seasonal coffee beverage.",
+        "tone": "Mysterious, playful, and promotional.",
+        "themes": [
+          "Seasonal marketing",
+          "Pet companionship",
+          "Brand exclusivity"
+        ],
+        "arc": [
+          "The black cat enters the frame, creating an air of mystery with its glowing eyes.",
+          "It walks across the dark marble surface toward the camera.",
+          "The cat moves aside to reveal a purple Starbucks drink topped with chocolate ears.",
+          "On-screen text announces the product name and release date."
+        ]
+      },
+      "characters": [
+        {
+          "id": "c1",
+          "name_or_label": "Arthur",
+          "appearance": "Black fur, yellow-green glowing eyes, speaker SPEAKER_00",
+          "role": "Main subject/mascot",
+          "first_seen_s": 0
+        }
+      ],
+      "audio": {
+        "music": "None detected",
+        "sound_effects": "Faint paw steps on marble surface",
+        "voiceover": false,
+        "tone": "Neutral/Calm"
+      },
+      "advertiser": "Starbucks",
+      "brands": [
+        "Starbucks"
+      ],
+      "chapters": [
+        {
+          "start_s": 0,
+          "end_s": 6.3,
+          "title": "Black Cat Frappuccino Reveal",
+          "summary": "A black cat walks across a dark marble surface, its eyes glowing. The camera follows the cat as it approaches and reveals a Starbucks cup filled with a purple drink topped with whipped cream and chocolate ears. Text appears on screen identifying the drink as 'BLACK CAT FRAPPUCCINO 10.22'."
+        }
+      ],
+      "scenes": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "location": "Dark marble surface",
+          "characters": [
+            "Arthur (black cat)"
+          ],
+          "action": "A black cat named Arthur walks into frame from the left side of the screen. The lighting is dim, highlighting only parts of the cat's face and body against the dark background.",
+          "dialogue_summary": "Speaker 00 says: 'Arthur Please don't do that.'",
+          "camera": "Low angle shot following the cat's movement",
+          "mood": "Mysterious"
+        },
+        {
+          "start_s": 3.0,
+          "end_s": 6.0,
+          "location": "Dark marble surface",
+          "characters": [],
+          "action": "The camera focuses on a Starbucks cup containing a purple beverage topped with white whipped cream and two small chocolate pieces shaped like cat ears. The cup has the Starbucks logo visible. Text overlay reads 'BLACK CAT FRAPPUCCINO 10.22'.",
+          "dialogue_summary": "Speaker 00 says: 'You know why.'",
+          "camera": "Close-up static shot of the drink",
+          "mood": "Intriguing"
+        }
+      ],
+      "key_moments": [
+        {
+          "t_s": 3.0,
+          "what": "Reveal of the Black Cat Frappuccino after the cat passes by",
+          "why_it_matters": "Shows the product being advertised"
+        }
+      ],
+      "on_screen_text": [
+        {
+          "t_s": 4.0,
+          "text": "BLACK CAT FRAPPUCCINO 10.22"
+        }
+      ],
+      "emotional_arc": [
+        {
+          "t_s": 0.0,
+          "emotion": "neutral",
+          "intensity": 1,
+          "cue": "Opening scene with mysterious atmosphere"
+        },
+        {
+          "t_s": 3.0,
+          "emotion": "curiosity",
+          "intensity": 2,
+          "cue": "Reveal of the themed drink"
+        }
+      ],
+      "products": [
+        {
+          "name": "Starbucks Black Cat Frappuccino",
+          "brand": "Starbucks",
+          "category": "Beverage",
+          "appearances": [
+            {
+              "t_s": 3.0,
+              "how_shown": "Purple-colored drink in clear plastic cup with whipped cream topping and chocolate cat ear garnish, featuring the Starbucks logo on the cup",
+              "prominence": "Primary focus after initial scene"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

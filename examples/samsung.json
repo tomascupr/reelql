@@ -1,0 +1,332 @@
+{
+  "status": "done",
+  "result": {
+    "schema_version": "1.2",
+    "video": {
+      "id": "7683468749499911431",
+      "title": "✨ Ready to make the move? With #SmartSwitch, there’s no need to leave...",
+      "channel": "samsung",
+      "license": "NA",
+      "duration_s": 31.8,
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@samsung/video/7683468749499911431",
+      "upload_date": "20260909",
+      "description": "✨ Ready to make the move? With #SmartSwitch, there’s no need to leave the things that matter behind. From your photos to Wi-Fi and passwords, bring it all straight to your new Galaxy. Nothing important gets left behind. #GalaxyZFold8 #Samsung Learn more: samsung.com",
+      "tags": [],
+      "music": {
+        "track": "오리지널 사운드 - Samsung",
+        "artists": [
+          "Samsung"
+        ]
+      },
+      "stats": {
+        "view_count": 5300000,
+        "like_count": 24600,
+        "comment_count": 0,
+        "repost_count": 591,
+        "save_count": 984,
+        "channel_follower_count": null,
+        "channel_is_verified": null,
+        "as_of": 1790366109
+      }
+    },
+    "timing": {
+      "fetch_s": 1.5,
+      "split_s": 2.1,
+      "asr_s": 2.1,
+      "chunks_s": 9.5,
+      "story_s": 1.5,
+      "total_s": 14.5
+    },
+    "speech": {
+      "segments": 0,
+      "speakers": 0,
+      "transcript": []
+    },
+    "chunks": {
+      "total": 2,
+      "ok": 2,
+      "errors": []
+    },
+    "analysis": {
+      "summary": "This promotional video demonstrates the Samsung Smart Switch app, highlighting its ability to seamlessly transfer data such as photos, Wi-Fi settings, and passwords from an old smartphone to a new Galaxy device, ensuring nothing important is left behind.",
+      "story": {
+        "premise": "Switching to a new Samsung Galaxy phone is made effortless with the Smart Switch app.",
+        "tone": "Positive, reassuring, and modern.",
+        "themes": [
+          "Seamless technology",
+          "Data security",
+          "User convenience"
+        ],
+        "arc": [
+          "Introduction of the new Galaxy device and the promise of easy transition.",
+          "Visual representation of data transfer using animated characters symbolizing apps and connectivity.",
+          "Emphasis on specific transferred items like photos, Wi-Fi networks, and passwords.",
+          "Confirmation that the process is simple and secure with the tagline 'It's that easy.'",
+          "Final display of the new purple Galaxy phone with the concluding message 'Switch. Easier.'"
+        ]
+      },
+      "characters": [
+        {
+          "id": "c1",
+          "name_or_label": "Promotional narrator",
+          "appearance": "Voice only (no speech detected in segments, but implied by tone/context)",
+          "role": "Explains the features",
+          "first_seen_s": 0
+        }
+      ],
+      "audio": {
+        "music": "Upbeat, light background music",
+        "sound_effects": "Soft chimes accompanying transitions",
+        "voiceover": false,
+        "tone": "Positive and reassuring"
+      },
+      "advertiser": "Samsung",
+      "brands": [
+        "Samsung",
+        "Galaxy",
+        "Smart Switch"
+      ],
+      "chapters": [
+        {
+          "start_s": 0,
+          "end_s": 30,
+          "title": "Switch to Galaxy with Smart Switch",
+          "summary": "A Samsung Galaxy device is showcased alongside the Smart Switch app, demonstrating an easy transition from another smartphone. Animated characters symbolize data transfer, emphasizing a seamless and effortless switch to the new device."
+        },
+        {
+          "start_s": 30,
+          "end_s": 31.8,
+          "title": "Switch. Easier.",
+          "summary": "A purple smartphone is displayed on a white background with the text 'Switch. Easier.' above it. The phone screen shows a cute bunny wallpaper and various app icons. The video then transitions to a black screen with the Samsung logo in white."
+        }
+      ],
+      "scenes": [
+        {
+          "start_s": 0.0,
+          "end_s": 2.0,
+          "location": "White background",
+          "characters": [
+            "Samsung Galaxy device"
+          ],
+          "action": "The video opens with a Samsung Galaxy device displayed against a white background. The screen shows a gradient of purple and pink hues.",
+          "dialogue_summary": "No speech detected.",
+          "camera": "Static shot focusing on the device.",
+          "mood": "Neutral"
+        },
+        {
+          "start_s": 2.0,
+          "end_s": 5.0,
+          "location": "White background",
+          "characters": [
+            "Smart Switch logo"
+          ],
+          "action": "The text 'Switch to Galaxy' appears below the device, followed by the Smart Switch logo.",
+          "dialogue_summary": "No speech detected.",
+          "camera": "Static shot transitioning to display the logo.",
+          "mood": "Neutral"
+        },
+        {
+          "start_s": 5.0,
+          "end_s": 10.0,
+          "location": "Abstract setting",
+          "characters": [
+            "Animated characters"
+          ],
+          "action": "Colorful animated characters appear, representing different apps or data types. They interact playfully, suggesting movement and transfer.",
+          "dialogue_summary": "No speech detected.",
+          "camera": "Dynamic shots following the characters' movements.",
+          "mood": "Playful"
+        },
+        {
+          "start_s": 10.0,
+          "end_s": 15.0,
+          "location": "Abstract setting",
+          "characters": [
+            "Blue Wi-Fi character"
+          ],
+          "action": "A blue character resembling a Wi-Fi signal appears, indicating connectivity and data transfer capabilities.",
+          "dialogue_summary": "Text: 'Come on, We've got Smart Switch.'",
+          "camera": "Close-up on the Wi-Fi character.",
+          "mood": "Encouraging"
+        },
+        {
+          "start_s": 15.0,
+          "end_s": 20.0,
+          "location": "Split-screen view",
+          "characters": [
+            "Two smartphones",
+            "Animated characters"
+          ],
+          "action": "The screen splits to show two smartphones, one transferring data to the other via the Smart Switch app. Characters continue their playful interactions.",
+          "dialogue_summary": "Text: 'From your photos to Wi-Fi and passwords.'",
+          "camera": "Split-screen static shots.",
+          "mood": "Informative"
+        },
+        {
+          "start_s": 20.0,
+          "end_s": 25.0,
+          "location": "Purple surface",
+          "characters": [
+            "Group of animated characters"
+          ],
+          "action": "Characters gather on a purple surface, symbolizing successful data transfer and organization on the new device.",
+          "dialogue_summary": "Text: 'Bring whatever you want.'",
+          "camera": "Wide shot capturing all characters.",
+          "mood": "Satisfying"
+        },
+        {
+          "start_s": 25.0,
+          "end_s": 30.0,
+          "location": "White background",
+          "characters": [
+            "Samsung Galaxy device"
+          ],
+          "action": "The final scene returns to the Samsung Galaxy device, now displaying its home screen with various app icons, indicating completion of the switch process.",
+          "dialogue_summary": "Text: 'It's that easy.'",
+          "camera": "Static shot focusing on the device.",
+          "mood": "Accomplished"
+        },
+        {
+          "start_s": 30,
+          "end_s": 31,
+          "location": "White background",
+          "characters": [],
+          "action": "The video starts with a static shot of a purple smartphone centered on a white background. Above the phone, the text 'Switch. Easier.' is displayed in bold black letters. On the left side of the screen, there is small vertical text that reads: 'Image simulated for illustrative purposes. Contains AI-generated images with edits. Actual UX/UI may vary. Sequences shortened.' The phone's screen displays a cute bunny wallpaper holding a heart-shaped balloon, along with several app icons arranged in a grid pattern. At the bottom of the screen, there are navigation buttons (three lines, circle, arrow)",
+          "dialogue_summary": "No speech detected",
+          "camera": "Static shot, no movement",
+          "mood": "neutral"
+        },
+        {
+          "start_s": 31,
+          "end_s": 31.8,
+          "location": "Black background",
+          "characters": [],
+          "action": "The scene transitions to a black screen with the Samsung logo displayed in white capital letters at the center of the frame.",
+          "dialogue_summary": "No speech detected",
+          "camera": "Static shot, no movement",
+          "mood": "neutral"
+        }
+      ],
+      "key_moments": [
+        {
+          "t_s": 2.0,
+          "what": "Introduction of Smart Switch app",
+          "why_it_matters": "Establishes the tool for switching devices"
+        },
+        {
+          "t_s": 10.0,
+          "what": "Emphasis on ease of use",
+          "why_it_matters": "Reassures viewers about simplicity"
+        },
+        {
+          "t_s": 25.0,
+          "what": "Completion of data transfer",
+          "why_it_matters": "Demonstrates successful outcome"
+        },
+        {
+          "t_s": 30,
+          "what": "Purple smartphone shown with 'Switch. Easier.' text",
+          "why_it_matters": "Introduces the product and its main selling point"
+        },
+        {
+          "t_s": 31,
+          "what": "Transition to Samsung logo",
+          "why_it_matters": "Identifies the brand behind the product"
+        }
+      ],
+      "on_screen_text": [
+        {
+          "t_s": 2.0,
+          "text": "Switch to Galaxy"
+        },
+        {
+          "t_s": 10.0,
+          "text": "Come on, We've got Smart Switch."
+        },
+        {
+          "t_s": 15.0,
+          "text": "From your photos to Wi-Fi and passwords."
+        },
+        {
+          "t_s": 20.0,
+          "text": "Bring whatever you want."
+        },
+        {
+          "t_s": 25.0,
+          "text": "It's that easy."
+        },
+        {
+          "t_s": 30,
+          "text": "Switch. Easier."
+        },
+        {
+          "t_s": 30,
+          "text": "Image simulated for illustrative purposes. Contains AI-generated images with edits. Actual UX/UI may vary. Sequences shortened."
+        },
+        {
+          "t_s": 31,
+          "text": "SAMSUNG"
+        }
+      ],
+      "emotional_arc": [
+        {
+          "t_s": 0.0,
+          "emotion": "neutral",
+          "intensity": 1,
+          "cue": "Initial display of the device"
+        },
+        {
+          "t_s": 10.0,
+          "emotion": "curiosity",
+          "intensity": 3,
+          "cue": "Introduction of animated characters"
+        },
+        {
+          "t_s": 25.0,
+          "emotion": "surprise",
+          "intensity": 4,
+          "cue": "Final reveal of completed setup"
+        }
+      ],
+      "products": [
+        {
+          "name": "Samsung Galaxy device",
+          "brand": "Samsung",
+          "category": "Smartphone",
+          "appearances": [
+            {
+              "t_s": 0.0,
+              "how_shown": "Displayed prominently throughout the video",
+              "prominence": "Primary focus"
+            }
+          ]
+        },
+        {
+          "name": "Smart Switch app",
+          "brand": "Samsung",
+          "category": "Software",
+          "appearances": [
+            {
+              "t_s": 2.0,
+              "how_shown": "Logo and interface shown",
+              "prominence": "Key feature"
+            }
+          ]
+        },
+        {
+          "name": "Samsung Smartphone",
+          "brand": "Samsung",
+          "category": "Electronics",
+          "appearances": [
+            {
+              "t_s": 30,
+              "how_shown": "Displayed front-facing on a white background, showing its home screen with a bunny wallpaper and app icons. The phone has a modern design with rounded corners and appears to be purple or lavender in a",
+              "prominence": "main focus"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

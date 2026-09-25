@@ -1,0 +1,230 @@
+{
+  "status": "done",
+  "result": {
+    "schema_version": "1.2",
+    "video": {
+      "id": "7687260979759058178",
+      "title": "This is how we do! ⚡️ #ShotOnPixel @googlepixel",
+      "channel": "psg",
+      "license": "NA",
+      "duration_s": 40.6,
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@psg/video/7687260979759058178",
+      "upload_date": "20260919",
+      "description": "This is how we do! ⚡️ #ShotOnPixel @googlepixel",
+      "tags": [],
+      "music": {
+        "track": "son original - psg",
+        "artists": [
+          "psg"
+        ]
+      },
+      "stats": {
+        "view_count": 947600,
+        "like_count": 139800,
+        "comment_count": 733,
+        "repost_count": 1250,
+        "save_count": 5334,
+        "channel_follower_count": null,
+        "channel_is_verified": null,
+        "as_of": 1790366125
+      }
+    },
+    "timing": {
+      "fetch_s": 1.4,
+      "split_s": 2.3,
+      "asr_s": 2.3,
+      "chunks_s": 4.0,
+      "story_s": 1.6,
+      "total_s": 9.4
+    },
+    "speech": {
+      "segments": 0,
+      "speakers": 0,
+      "transcript": []
+    },
+    "chunks": {
+      "total": 2,
+      "ok": 2,
+      "errors": []
+    },
+    "analysis": {
+      "summary": "A group of Paris Saint-Germain football players practice penalty kicks on a sunny training pitch, captured in high quality to showcase the camera capabilities of the Google Pixel.",
+      "story": {
+        "premise": "Professional footballers engage in routine penalty shootouts during a training session.",
+        "tone": "Neutral and naturalistic, focusing on athletic movement and ambient sounds.",
+        "themes": [
+          "Sports training",
+          "Technological photography showcase",
+          "Team camaraderie"
+        ],
+        "arc": [
+          "Players in black and red kits line up for penalty drills.",
+          "The camera follows individual players as they approach the ball.",
+          "Each player strikes the ball while the goalkeeper attempts a save.",
+          "Successful goals are scored amidst the sound of impact and crowd ambiance.",
+          "The footage highlights the clarity and detail of the action.",
+          "The sequence concludes with players walking off after their turns.",
+          "The video serves as a promotional demo for smartphone photography."
+        ]
+      },
+      "characters": [
+        {
+          "id": "c1",
+          "name_or_label": "PSG football player practicing penalties",
+          "appearance": "Male athlete, short dark curly hair, wearing PSG-style black training kit with red accents",
+          "role": "Main subject demonstrating the drill",
+          "first_seen_s": 0
+        },
+        {
+          "id": "c2",
+          "name_or_label": "Goalkeeper defending the goal",
+          "appearance": "Indistinct due to distance, wearing dark goalkeeper kit",
+          "role": "Defending against penalty shots",
+          "first_seen_s": 0
+        }
+      ],
+      "audio": {
+        "music": "None",
+        "sound_effects": "Sounds of the ball being kicked, footfalls, grass rustle, and distant chatter",
+        "voiceover": false,
+        "tone": "Calm, focused, naturalistic"
+      },
+      "advertiser": "Google",
+      "brands": [
+        "Nike",
+        "Google Pixel",
+        "Qatar Airways",
+        "Visit Rwanda",
+        "Paris Saint-Germain"
+      ],
+      "chapters": [
+        {
+          "start_s": 0,
+          "end_s": 30,
+          "title": "Football Players Practice Penalty Kicks",
+          "summary": "A group of football players wearing black and red training kits practice penalty kicks on a sunny day. The camera follows each player as they take their turn, with one player scoring while the goalkeeper dives to stop the ball."
+        },
+        {
+          "start_s": 30,
+          "end_s": 40.6,
+          "title": "Footballers practice penalty kicks",
+          "summary": "A footballer in a black training kit with red accents practices taking penalty shots on a well-maintained grass field. The player approaches the ball, takes a shot at goal, and then walks away as another teammate prepares for their turn."
+        }
+      ],
+      "scenes": [
+        {
+          "start_s": 0.0,
+          "end_s": 30,
+          "location": "Outdoor football field",
+          "characters": [
+            "Players in black and red training kits"
+          ],
+          "action": "Taking turns practicing penalty kicks",
+          "dialogue_summary": "No speech detected",
+          "camera": "Follows each player from behind as they approach the ball",
+          "mood": "Neutral"
+        },
+        {
+          "start_s": 30.0,
+          "end_s": 40.6,
+          "location": "Outdoor football training ground with modern building in background",
+          "characters": [
+            "Player 1 (male, dark hair, wearing black long-sleeve training top with 'QATAR AIRWAYS' logo, black shorts with red stripe, bright orange cleats)",
+            "Goalkeeper (in dark kit)",
+            "Other players (background, various kits)"
+          ],
+          "action": "Player 1 walks toward the ball near the penalty spot, takes a run-up, and shoots the ball into the goal. After scoring, he turns and walks back while smiling slightly. Another player enters frame from right to prepare for next shot.",
+          "dialogue_summary": "No speech detected",
+          "camera": "Static wide shot capturing full field view; slight pan follows Player 1 after kick",
+          "mood": "Neutral/calm — routine training session"
+        }
+      ],
+      "key_moments": [
+        {
+          "t_s": 15.0,
+          "what": "One player scores a goal while the goalkeeper dives but fails to stop the ball",
+          "why_it_matters": "Shows the skill and precision of the players during practice"
+        },
+        {
+          "t_s": 34.5,
+          "what": "Player 1 strikes the ball powerfully toward the upper left corner of the goal",
+          "why_it_matters": "Demonstrates technique and precision in penalty execution"
+        },
+        {
+          "t_s": 36.8,
+          "what": "Player 1 smiles and walks away after successful goal",
+          "why_it_matters": "Shows confidence and satisfaction post-successful attempt"
+        }
+      ],
+      "on_screen_text": [
+        {
+          "t_s": 0.0,
+          "text": "Shot on Google Pixel"
+        },
+        {
+          "t_s": 30.0,
+          "text": "Shot on Google Pixel (watermark, top right); QATAR AIRWAYS (sponsor on banners behind goal); C'EST PARIS (banner behind goal); VISIT RWANDA (on back of Player 1's shirt); GOAL (implied by action, no字幕"
+        }
+      ],
+      "emotional_arc": [
+        {
+          "t_s": 0.0,
+          "emotion": "neutral",
+          "intensity": 2,
+          "cue": "The scene is calm and focused, with no music or dialogue."
+        }
+      ],
+      "products": [
+        {
+          "name": "Nike",
+          "brand": "Nike",
+          "category": "Sportswear",
+          "appearances": [
+            {
+              "t_s": 0.0,
+              "how_shown": "Logos visible on the players' training kits",
+              "prominence": "High"
+            }
+          ]
+        },
+        {
+          "name": "Google Pixel",
+          "brand": "Google",
+          "category": "Camera/Device",
+          "appearances": [
+            {
+              "t_s": 30.0,
+              "how_shown": "Watermark overlay: 'Shot on Google Pixel' in top-right corner throughout entire clip",
+              "prominence": "Persistent watermark, not interactive object"
+            }
+          ]
+        },
+        {
+          "name": "Nike Cleats",
+          "brand": "Nike",
+          "category": "Footwear",
+          "appearances": [
+            {
+              "t_s": 33.0,
+              "how_shown": "Bright orange cleats worn by Player 1, visible during approach and kick",
+              "prominence": "Highly visible footwear detail"
+            }
+          ]
+        },
+        {
+          "name": "PSG Training Kit",
+          "brand": "Paris Saint-Germain / Nike",
+          "category": "Apparel",
+          "appearances": [
+            {
+              "t_s": 30.0,
+              "how_shown": "Black long-sleeve top with red accents, 'QATAR AIRWAYS' sponsor text across chest, 'VISIT RWANDA' on back",
+              "prominence": "Full uniform displayed clearly"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

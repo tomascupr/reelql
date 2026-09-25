@@ -1,0 +1,414 @@
+{
+  "status": "done",
+  "result": {
+    "schema_version": "1.2",
+    "video": {
+      "id": "7664663334871944470",
+      "title": "Everyone enjoys the beautiful game in their own way and Delfina built...",
+      "channel": "fifaworldcup",
+      "license": "NA",
+      "duration_s": 43.1,
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@fifaworldcup/video/7664663334871944470",
+      "upload_date": "20260720",
+      "description": "Everyone enjoys the beautiful game in their own way and Delfina built her life around it. Nothing was going to keep her from this final and now she's our Lay's Fan of the Match. 🇦🇷 #LaysFanoftheMatch #FIFAWorldCup26 #Lays @laysfootball @lays",
+      "tags": [],
+      "music": {
+        "track": "original sound - FIFA World Cup",
+        "artists": [
+          "FIFA World Cup"
+        ]
+      },
+      "stats": {
+        "view_count": 1100000,
+        "like_count": 43200,
+        "comment_count": 717,
+        "repost_count": 439,
+        "save_count": 2248,
+        "channel_follower_count": null,
+        "channel_is_verified": null,
+        "as_of": 1790366135
+      }
+    },
+    "timing": {
+      "fetch_s": 1.6,
+      "split_s": 2.5,
+      "asr_s": 2.5,
+      "chunks_s": 10.5,
+      "story_s": 2.0,
+      "total_s": 16.6
+    },
+    "speech": {
+      "segments": 6,
+      "speakers": 1,
+      "transcript": [
+        {
+          "start": 0.0,
+          "end": 4.72,
+          "speaker": "SPEAKER_00",
+          "text": "I think we're so proud of what this team have done and I'm just happy to be able to witness it."
+        },
+        {
+          "start": 6.08,
+          "end": 14.08,
+          "speaker": "SPEAKER_00",
+          "text": "I quit my job to follow the game around the world, but I guess at the end of the day that's Argentina before you live for the game, we breathe it, it's part of who we are."
+        },
+        {
+          "start": 14.32,
+          "end": 18.08,
+          "speaker": "SPEAKER_00",
+          "text": "This tournament brings out the most passionate essence of Argentina."
+        },
+        {
+          "start": 18.16,
+          "end": 24.48,
+          "speaker": "SPEAKER_00",
+          "text": "It's this feeling of aguante Argentina, aguante la patria, which basically means long live the nation, long live Argentina."
+        },
+        {
+          "start": 24.72,
+          "end": 31.44,
+          "speaker": "SPEAKER_00",
+          "text": "To be alive during this generation of players from 2021 onwards has been the most incredible thing and the thing that I'm the most grateful for."
+        },
+        {
+          "start": 31.6,
+          "end": 38.0,
+          "speaker": "SPEAKER_00",
+          "text": "To be here as Lay's fan of the match, this absolutely generational team is a completely unforgettable experience."
+        }
+      ]
+    },
+    "chunks": {
+      "total": 2,
+      "ok": 2,
+      "errors": []
+    },
+    "analysis": {
+      "summary": "Delfina, a passionate Argentine football fan who quit her job to follow the national team globally, shares her emotional journey and dedication to Argentina during the FIFA World Cup 2026. Her story culminates in her being recognized as the Lay's Fan of the Match, celebrating with fellow fans and holding a trophy.",
+      "story": {
+        "premise": "A dedicated fan’s life revolves around supporting Argentina's national football team through global tournaments.",
+        "tone": "Passionate, celebratory, and emotionally uplifting.",
+        "themes": [
+          "Fan devotion",
+          "National pride",
+          "Personal sacrifice for passion",
+          "Celebration of sport"
+        ],
+        "arc": [
+          "Delfina expresses immense pride in Argentina's team performance and her role as a witness to their success.",
+          "She reveals she quit her job to travel worldwide following the team, highlighting her extreme dedication.",
+          "The video showcases vibrant celebrations with other fans wearing jerseys and waving flags.",
+          "Delfina reflects on the 'aguante' (loyalty/resilience) culture that defines Argentine fandom.",
+          "She is surprised and honored to be named Lay's Fan of the Match at the stadium.",
+          "She accepts the award, expressing gratitude for the unforgettable experience with the generational team.",
+          "The video ends with celebratory visuals and branding for the FIFA World Cup 2026 and Lay's."
+        ]
+      },
+      "characters": [
+        {
+          "id": "c1",
+          "name_or_label": "Delfina",
+          "appearance": "Young woman with curly brown hair, wearing an Argentina jersey and star-shaped earrings",
+          "role": "Main speaker and protagonist",
+          "first_seen_s": 0
+        }
+      ],
+      "audio": {
+        "music": "Upbeat and energetic instrumental track accompanying the visuals, enhancing the celebratory mood.",
+        "sound_effects": "Cheering crowds, whistles, ambient noise typical of a sporting event, stadium chants.",
+        "voiceover": true,
+        "tone": "Inspiring, triumphant, and emotional."
+      },
+      "advertiser": "Lay's",
+      "brands": [
+        "Lay's",
+        "FIFA World Cup 2026"
+      ],
+      "chapters": [
+        {
+          "start_s": 0,
+          "end_s": 30,
+          "title": "Argentine Fans Celebrate at FIFA World Cup",
+          "summary": "A passionate Argentine female fan shares her dedication to supporting the national team, showcasing scenes of vibrant celebrations with fellow fans wearing Argentina jerseys and waving flags. The video captures the essence of Argentine football culture, highlighting the emotional connection between the fans and their team during the FIFA World Cup 2026."
+        },
+        {
+          "start_s": 30,
+          "end_s": 43.1,
+          "title": "Fan Celebrates Match Award",
+          "summary": "A woman in an Argentina jersey is shown celebrating at a stadium. She appears on the large screen as Lay's Fan of the Match and later holds a trophy while expressing her gratitude for being part of the event."
+        }
+      ],
+      "scenes": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.5,
+          "location": "Outdoor setting, possibly a stadium or public gathering area",
+          "characters": [
+            "Female Fan"
+          ],
+          "action": "The female fan speaks directly to the camera, expressing pride in the team's achievements. She is wearing an Argentina jersey and star-shaped earrings. The background shows other fans celebrating.",
+          "dialogue_summary": "She expresses pride in the team's accomplishments and happiness to witness them.",
+          "camera": "Close-up on the fan's face as she speaks, then pans out slightly to show more of the crowd.",
+          "mood": "Proud and celebratory"
+        },
+        {
+          "start_s": 3.5,
+          "end_s": 7.0,
+          "location": "Same outdoor setting",
+          "characters": [
+            "Female Fan"
+          ],
+          "action": "The fan continues speaking about quitting her job to follow the game globally. The scene transitions to a shot of a large building with 'FIFA WORLD CUP 2026' signage.",
+          "dialogue_summary": "She mentions quitting her job to support the team internationally.",
+          "camera": "Medium shot of the fan, followed by a wide shot of the stadium exterior.",
+          "mood": "Dedicated and enthusiastic"
+        },
+        {
+          "start_s": 7.0,
+          "end_s": 14.0,
+          "location": "Stadium exterior and interior",
+          "characters": [
+            "Female Fan",
+            "Other Fans"
+          ],
+          "action": "The fan hugs another person wearing an Argentina jersey. The scene shifts to show a group of fans cheering together, emphasizing the communal spirit. The fan talks about living for the game.",
+          "dialogue_summary": "She emphasizes the deep passion and commitment of Argentine fans.",
+          "camera": "Dynamic shots capturing interactions among fans, including close-ups and group angles.",
+          "mood": "Energetic and united"
+        },
+        {
+          "start_s": 14.0,
+          "end_s": 20.0,
+          "location": "Stadium surroundings",
+          "characters": [
+            "Female Fan",
+            "Other Fans"
+          ],
+          "action": "The fan dances joyfully while others around her wave flags and cheer. A montage of images highlights moments from past tournaments, including Qatar 2022.",
+          "dialogue_summary": "She describes the tournament bringing out the most passionate side of Argentina.",
+          "camera": "Fast-paced cuts showing various angles of celebration and historical references.",
+          "mood": "Joyful and nostalgic"
+        },
+        {
+          "start_s": 20.0,
+          "end_s": 25.0,
+          "location": "Stadium entrance",
+          "characters": [
+            "Female Fan",
+            "Male Fan (wearing wig)"
+          ],
+          "action": "The fan poses with a male fan wearing a blue-and-white wig. They hold up an Argentine flag and smile brightly. Text overlays translate phrases like 'long live the nation.'",
+          "dialogue_summary": "She explains patriotic slogans associated with Argentine football fandom.",
+          "camera": "Selfie-style shots and medium shots focusing on the duo’s expressions and gestures.",
+          "mood": "Playful and patriotic"
+        },
+        {
+          "start_s": 25.0,
+          "end_s": 30.0,
+          "location": "Walking towards the stadium",
+          "characters": [
+            "Female Fan",
+            "Male Fan (wearing wig)"
+          ],
+          "action": "The two walk arm-in-arm toward the stadium, displaying unity and excitement. The final frames show the female fan entering the stadium alone, looking ahead hopefully.",
+          "dialogue_summary": "She reflects on being alive during this remarkable era of players since 2021.",
+          "camera": "Tracking shots following their movement, ending with a solitary figure walking into the vast stadium.",
+          "mood": "Hopeful and reflective"
+        },
+        {
+          "start_s": 30,
+          "end_s": 36,
+          "location": "Stadium stands",
+          "characters": [
+            "Woman (Speaker 00)"
+          ],
+          "action": "The camera focuses on the back of a woman wearing an Argentina football jersey with blue and white stripes. The scene cuts to her face; she has dark hair, star-shaped earrings, and is looking up excitedly. She raises her arms and cheers enthusiastically. The camera then shows her image projected onto the large stadium screen next to a yellow 'Lay's FAN OF THE MATCH' banner. Text overlays read: '#FIFAWorldCup', 'this absolutely generational team,'",
+          "dialogue_summary": "Speaker 00 expresses that being alive during this generation of players since 2021 has been incredible and what she is most grateful for.",
+          "camera": "Close-up tracking shots of the woman, followed by a wide shot of the stadium screen.",
+          "mood": "Excitement, Celebration"
+        },
+        {
+          "start_s": 36,
+          "end_s": 43,
+          "location": "Presentation area / Yellow backdrop",
+          "characters": [
+            "Woman (Speaker 00)"
+          ],
+          "action": "The woman stands in front of a bright yellow wall covered with repeating logos for 'Lay's', 'FAN OF THE MATCH', and 'FIFA WORLD CUP 2026'. She is holding a large, red and gold trophy shaped like a chip bowl with 'Lay's' written on it. She smiles broadly, laughs, and brings her hand to her mouth in a gesture of happy surprise or emotion. A graphic overlay appears framing her face with the text 'ESP V ARG FAN OF THE MATCH'. The video ends with a blurred shot displaying the FIFA World Cup 2026 logo alongside the Lay's logo.",
+          "dialogue_summary": "Speaker 00 states that being there as Lay's Fan of the Match for this generational team was an unforgettable experience.",
+          "camera": "Medium shot focusing on the woman and the trophy, ending with a static graphic display.",
+          "mood": "Joy, Pride"
+        }
+      ],
+      "key_moments": [
+        {
+          "t_s": 8.5,
+          "what": "Hugging another fan outside the stadium, symbolizing camaraderie.",
+          "why_it_matters": "Highlights the strong bonds formed through shared passion for the team."
+        },
+        {
+          "t_s": 18.5,
+          "what": "Montage of images featuring past victories, including Qatar 2022.",
+          "why_it_matters": "Connects current enthusiasm to historical successes, enriching context."
+        },
+        {
+          "t_s": 29.5,
+          "what": "Solo shot of the female fan walking into the stadium.",
+          "why_it_matters": "Evokes anticipation and personal reflection on the significance of the moment."
+        },
+        {
+          "t_s": 33,
+          "what": "The woman's face is displayed on the massive stadium jumbotron.",
+          "why_it_matters": "Highlights her status as the selected fan for the match."
+        },
+        {
+          "t_s": 36,
+          "what": "The woman poses with the branded trophy against a sponsor backdrop.",
+          "why_it_matters": "Shows the physical award associated with the title."
+        }
+      ],
+      "on_screen_text": [
+        {
+          "t_s": 3.5,
+          "text": "ESP V ARG FAN OF THE MATCH"
+        },
+        {
+          "t_s": 8.0,
+          "text": "FIFA WORLD CUP 2026"
+        },
+        {
+          "t_s": 18.5,
+          "text": "QATAR 2022 ARGENTINA CAMPEON"
+        },
+        {
+          "t_s": 21.0,
+          "text": "Which basically means long live the nation,"
+        },
+        {
+          "t_s": 23.0,
+          "text": "long live Argentina."
+        },
+        {
+          "t_s": 30,
+          "text": "and the thing that I'm the most grateful for."
+        },
+        {
+          "t_s": 32,
+          "text": "To be here as Lay's Fan of the Match,"
+        },
+        {
+          "t_s": 34,
+          "text": "this absolutely generational team,"
+        },
+        {
+          "t_s": 36,
+          "text": "is a completely unforgettable experience."
+        },
+        {
+          "t_s": 37,
+          "text": "ESP V ARG FAN OF THE MATCH"
+        },
+        {
+          "t_s": 40,
+          "text": "FIFA WORLD CUP 2026 | Lay's Logo"
+        }
+      ],
+      "emotional_arc": [
+        {
+          "t_s": 0.0,
+          "emotion": "pride",
+          "intensity": 4,
+          "cue": "Opening statement about pride in the team's achievements."
+        },
+        {
+          "t_s": 7.0,
+          "emotion": "determination",
+          "intensity": 3,
+          "cue": "Mentioning quitting her job to follow the game globally."
+        },
+        {
+          "t_s": 14.0,
+          "emotion": "excitement",
+          "intensity": 5,
+          "cue": "Dynamic shots of fans celebrating and dancing enthusiastically."
+        },
+        {
+          "t_s": 20.0,
+          "emotion": "joy",
+          "intensity": 4,
+          "cue": "Smiling poses with the male fan and playful interactions."
+        },
+        {
+          "t_s": 29.0,
+          "emotion": "hope",
+          "intensity": 3,
+          "cue": "Final solo shot of the fan walking into the stadium, gazing forward."
+        },
+        {
+          "t_s": 30,
+          "emotion": "excitement",
+          "intensity": 5,
+          "cue": "The woman cheering wildly and the upbeat music."
+        },
+        {
+          "t_s": 36,
+          "emotion": "joy",
+          "intensity": 4,
+          "cue": "The reveal of the woman smiling and laughing with her award."
+        }
+      ],
+      "products": [
+        {
+          "name": "Argentina Jersey",
+          "brand": "adidas",
+          "category": "Clothing",
+          "appearances": [
+            {
+              "t_s": 0.0,
+              "how_shown": "Worn prominently by the main fan throughout the clip.",
+              "prominence": "}, {"
+            }
+          ]
+        },
+        {
+          "name": "Lay's",
+          "brand": "Lay's",
+          "category": "Snacks",
+          "appearances": [
+            {
+              "t_s": 30,
+              "how_shown": "Visible on the large stadium screen banner ('Lay's FAN OF THE MATCH') and prominently featured on the trophy held by the woman and printed on the yellow background wall.",
+              "prominence": "High"
+            }
+          ]
+        },
+        {
+          "name": "Adidas",
+          "brand": "Adidas",
+          "category": "Apparel",
+          "appearances": [
+            {
+              "t_s": 30,
+              "how_shown": "Logo visible on the chest of the woman's Argentina jersey.",
+              "prominence": "Low"
+            }
+          ]
+        },
+        {
+          "name": "FIFA World Cup 2026",
+          "brand": "FIFA",
+          "category": "Event",
+          "appearances": [
+            {
+              "t_s": 30,
+              "how_shown": "Text '#FIFAWorldCup' on the screen, 'FIFA WORLD CUP 2026' on the trophy base and backdrop, and final logo card.",
+              "prominence": "High"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

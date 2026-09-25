@@ -1,0 +1,8 @@
+{
+  "name": "reelql",
+  "description": "Give your agent eyes: any video link in, one typed JSON out.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Tomas Cupr"
+  }
+}

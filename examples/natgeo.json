@@ -1,0 +1,177 @@
+{
+  "status": "done",
+  "result": {
+    "schema_version": "1.2",
+    "video": {
+      "id": "7686521463628664095",
+      "title": "New cat alert! A call from a wildlife sanctuary about a \"weird cat\" h...",
+      "channel": "natgeo",
+      "license": "NA",
+      "duration_s": 10.0,
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@natgeo/video/7686521463628664095",
+      "upload_date": "20260917",
+      "description": "New cat alert! A call from a wildlife sanctuary about a \"weird cat\" has led to the first new cat species discovered in over 100 years. Smaller than an average housecat and covered in leopard-like spots, the cat species—proposed name Leopardus tilcayo—lives in Bolivia’s Yungas forest ecoregion, and very little is known about its day-to-day life in the wild. Its discovery is redrawing the branches of the cat family tree, and researchers hope the methods used to identify it could be used to find even more new cat species around the world. Learn more about this feline surprise at the 🔗 in bio.",
+      "tags": [],
+      "music": {
+        "track": "original sound",
+        "artists": [
+          "National Geographic"
+        ]
+      },
+      "stats": {
+        "view_count": 1900000,
+        "like_count": 197900,
+        "comment_count": 2968,
+        "repost_count": 74100,
+        "save_count": 25018,
+        "channel_follower_count": null,
+        "channel_is_verified": null,
+        "as_of": 1790366135
+      }
+    },
+    "timing": {
+      "fetch_s": 1.5,
+      "split_s": 0.9,
+      "asr_s": 0.9,
+      "chunks_s": 4.2,
+      "story_s": 1.5,
+      "total_s": 8.0
+    },
+    "speech": {
+      "segments": 0,
+      "speakers": 0,
+      "transcript": []
+    },
+    "chunks": {
+      "total": 1,
+      "ok": 1,
+      "errors": []
+    },
+    "analysis": {
+      "summary": "National Geographic announces the discovery of *Leopardus tilcayo*, the first new wild cat species identified in over a century, found in Bolivia's Yungas forest.",
+      "story": {
+        "premise": "A wildlife sanctuary's report of an unusual spotted cat leads to a major zoological discovery.",
+        "tone": "Informative and scientific",
+        "themes": [
+          "Wildlife conservation",
+          "Scientific discovery",
+          "Biodiversity"
+        ],
+        "arc": [
+          "Scientists identify a mysterious spotted feline reported by a sanctuary.",
+          "The animal is confirmed as a previously unknown species distinct from known cats.",
+          "The new species, named *Leopardus tilcayo*, is smaller than a housecat with leopard-like spots.",
+          "It inhabits the remote Yungas forest ecoregion in Bolivia.",
+          "Little is currently known about its daily behavior or life in the wild.",
+          "The discovery reshapes the evolutionary family tree of the cat species.",
+          "Researchers hope their identification methods will help find more hidden species globally."
+        ]
+      },
+      "characters": [
+        {
+          "id": "c1",
+          "name_or_label": "Spotted wild cat subject",
+          "appearance": "Small, spotted fur pattern, alert eyes, whiskers",
+          "role": "Subject of the video, showcasing the newly discovered cat species",
+          "first_seen_s": 0
+        }
+      ],
+      "audio": {
+        "music": "None detected",
+        "sound_effects": "None detected",
+        "voiceover": false,
+        "tone": "Neutral/Calm"
+      },
+      "advertiser": "natgeo",
+      "brands": [
+        "natgeo"
+      ],
+      "chapters": [
+        {
+          "start_s": 0,
+          "end_s": 10.0,
+          "title": "New Cat Species Discovery",
+          "summary": "A spotted wild cat is shown in close-up, moving slowly and looking around. Text on screen announces that scientists have discovered the first new cat species in over 100 years."
+        }
+      ],
+      "scenes": [
+        {
+          "start_s": 0.0,
+          "end_s": 3.2,
+          "location": "White background setting",
+          "characters": [
+            "Spotted Wild Cat"
+          ],
+          "action": "The cat is lying down, then begins to move its head and look around.",
+          "dialogue_summary": "No speech detected.",
+          "camera": "Close-up shot of the cat's face and upper body.",
+          "mood": "Neutral/Calm"
+        },
+        {
+          "start_s": 3.2,
+          "end_s": 5.8,
+          "location": "White background setting",
+          "characters": [
+            "Spotted Wild Cat"
+          ],
+          "action": "The cat continues to move its head and looks directly at the camera.",
+          "dialogue_summary": "No speech detected.",
+          "camera": "Close-up shot of the cat's face.",
+          "mood": "Neutral/Calm"
+        },
+        {
+          "start_s": 5.8,
+          "end_s": 7.6,
+          "location": "White background setting",
+          "characters": [
+            "Spotted Wild Cat"
+          ],
+          "action": "The cat sits up straighter, maintaining eye contact with the camera.",
+          "dialogue_summary": "No speech detected.",
+          "camera": "Close-up shot of the cat's face and upper body.",
+          "mood": "Neutral/Calm"
+        },
+        {
+          "start_s": 7.6,
+          "end_s": 10.0,
+          "location": "White background setting",
+          "characters": [
+            "Spotted Wild Cat"
+          ],
+          "action": "The cat lowers its head slightly, appearing more relaxed.",
+          "dialogue_summary": "No speech detected.",
+          "camera": "Close-up shot of the cat's face and upper body.",
+          "mood": "Neutral/Calm"
+        }
+      ],
+      "key_moments": [
+        {
+          "t_s": 0.0,
+          "what": "Introduction of the cat with text overlay about the discovery.",
+          "why_it_matters": "Sets the context for the video content."
+        },
+        {
+          "t_s": 5.8,
+          "what": "Cat sits up straighter, engaging with the viewer.",
+          "why_it_matters": "Highlights the cat's features and demeanor."
+        }
+      ],
+      "on_screen_text": [
+        {
+          "t_s": 0.0,
+          "text": "Scientists Discover First New Cat Species in Over 100 Years"
+        }
+      ],
+      "emotional_arc": [
+        {
+          "t_s": 0.0,
+          "emotion": "neutral",
+          "intensity": 1,
+          "cue": "Text overlay introducing the topic."
+        }
+      ],
+      "products": []
+    }
+  }
+}

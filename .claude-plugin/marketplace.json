@@ -1,0 +1,14 @@
+{
+  "name": "reelql",
+  "description": "ReelQL: give your agent eyes. Any video link in, one typed JSON out.",
+  "owner": {
+    "name": "Tomas Cupr"
+  },
+  "plugins": [
+    {
+      "name": "reelql",
+      "source": "./",
+      "description": "Give your agent eyes: any video link in, one typed JSON out."
+    }
+  ]
+}
