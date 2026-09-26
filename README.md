@@ -134,7 +134,7 @@ The full document also has `story`, `characters`, `audio`, `chapters` (one per 3
 - Any public video that yt-dlp can fetch (YouTube, TikTok, Vimeo and many more), or a direct link to a media file.
 - Up to 30 minutes and 4 GB per video. No live streams, and nothing behind a login.
 - Two jobs queued or running per key. Results are kept for a day.
-- This is a test service with no uptime promise. A restart forgets jobs in progress; submit again if a job id returns 404.
+- This is a test service with no uptime promise. Jobs survive a restart of the service: one in progress starts over and finishes. A job id returns 404 after a day.
 - ReelQL keeps the fetched video and the result on its server. Don't send anything you aren't allowed to share.
 
 The analysis runs on open models on our own GPUs, with no third-party AI APIs.
