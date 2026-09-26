@@ -77,5 +77,6 @@ All times are seconds from the start of the video. A person's name appears only 
 - `400`: the URL was refused (private address, not http(s), a live stream, longer than 30 minutes, over 4 GB, or not a video). The reason is in `.detail`.
 - `401`: missing or wrong key.
 - `429`: the key already has 2 jobs queued or running, for example from another session. Wait and run again.
+- `503`: ReelQL is busy. Wait the seconds in the `Retry-After` header (60) and submit again. While a job is `queued`, its `position` says how many jobs are ahead of it, counting itself.
 - `404` on a job: wrong id, older than a day, or the service restarted (jobs are kept in memory). Submit again.
 - A `failed` job: `.error` says why (for example a deleted or region-blocked post).
