@@ -1,6 +1,6 @@
 # ReelQL: give your agent eyes
 
-**⭐ Star the repo** (and Watch → Releases to hear about updates), and follow [@tomcupr](https://x.com/tomcupr) on X for launch news and tester keys.
+**⭐ Star the repo** (and Watch → Releases to hear about updates), and follow [@tomcupr](https://x.com/tomcupr) on X for launch news.
 
 Paste any video link and get back one typed JSON document: summary, chapters, scenes, cast, key moments, the emotional arc, products and brands, on-screen text and the full transcript. ReelQL watches the video, and [Jev](https://docs.typesafe.ai) turns what it saw into decisions your code can branch on.
 
@@ -69,7 +69,12 @@ Send Jev only the fields a question needs, not the whole document: a long video'
 
 ## Get started
 
-**1. Get a key.** ReelQL is in private testing. DM [@tomcupr on X](https://x.com/tomcupr) and you'll get a personal key.
+**1. Get a key.** One call, no sign-up. A new key comes with 10 free minutes of video:
+
+```sh
+curl -s -X POST https://reelql.tail6c0e2d.ts.net/keys
+# {"key": "rql_...", "account": "k-...", "minutes": 10.0, ...}
+```
 
 **2. Install the skill.**
 
@@ -96,6 +101,15 @@ curl -s -H "$H" $API/jobs/6b0550c3dc9f   # queued, running, then done (with "res
 ```
 
 A 4-minute video takes about 25 seconds and a 15-minute one about a minute.
+
+## Pricing
+
+$0.05 per minute of video, taken from prepaid credit when a job starts. A job that fails costs nothing. `GET /balance` shows the minutes left, and a job the credit can't cover gets `402`.
+
+Top up $5 to $500 in whole dollars ($5 buys 100 minutes):
+
+- **In a browser:** `POST /credits/checkout {"usd": 5}` returns a Stripe payment page. Stripe adds VAT or sales tax where it applies. In Claude Code, the skill makes this link for you when the credit runs out.
+- **From an agent:** `POST /credits {"usd": 5}` speaks [MPP](https://mpp.dev), the Machine Payments Protocol. It answers `402` with a payment challenge, and an agent with an MPP wallet pays it and sends the request again. With Stripe's Link wallet, for example: `npx @stripe/link-cli mpp pay https://reelql.tail6c0e2d.ts.net/credits -X POST -d '{"usd": 5}' -H "X-API-Key: $REELQL_API_KEY"`. Link's agent wallet isn't available in every country yet. `GET /openapi.json` describes the paid endpoint for MPP clients.
 
 ## What you get back
 
@@ -135,7 +149,7 @@ The full document also has `story`, `characters`, `audio`, `chapters` (one per 3
 - Up to 30 minutes and 4 GB per video. No live streams, and nothing behind a login.
 - Two jobs queued or running per key. Results are kept for a day.
 - When many jobs are waiting, a new one gets `503` with `Retry-After`; try again after that many seconds. A queued job's status shows its `position` in the queue.
-- This is a test service with no uptime promise. Jobs survive a restart of the service: one in progress starts over and finishes. A job id returns 404 after a day.
+- ReelQL runs on a single GPU server, with no uptime promise. Jobs survive a restart of the service: one in progress starts over and finishes. A job id returns 404 after a day.
 - ReelQL keeps the fetched video and the result on its server. Don't send anything you aren't allowed to share.
 
 The analysis runs on open models on our own GPUs, with no third-party AI APIs.

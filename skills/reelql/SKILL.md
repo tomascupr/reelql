@@ -5,7 +5,7 @@ description: Analyze any video link (YouTube, TikTok, Vimeo, media file): story,
 
 # ReelQL
 
-ReelQL turns a video URL into one JSON document. It needs the environment variable `REELQL_API_KEY`, a personal key (testers get one by DMing @tomcupr on X). The scripts check their own keys; when one is missing they print how to get it. Pass that on to the user as it is and wait for the key. Never inspect `REELQL_API_KEY` or `TYPESAFE_API_KEY` yourself (no `echo`, `printenv`, `env`, `cat .env`, not even to test that one is set), and never write a key into a file or command line.
+ReelQL turns a video URL into one JSON document. It needs the environment variable `REELQL_API_KEY`, a personal key that anyone can get for free with 10 minutes of video. The scripts check their own keys; when one is missing they print how to get it. Pass that on to the user as it is and wait for the key. Never inspect `REELQL_API_KEY` or `TYPESAFE_API_KEY` yourself (no `echo`, `printenv`, `env`, `cat .env`, not even to test that one is set), and never write a key into a file or command line.
 
 ## Run videos
 
@@ -24,6 +24,16 @@ jq '.result.analysis | {summary, advertiser, brands, products, emotional_arc, ke
 jq '.result.video | {title, channel, platform, duration_s, stats}' reelql-1.json
 jq -r '.result.speech.transcript[] | "[\(.start)] \(.speaker): \(.text)"' reelql-1.json
 ```
+
+## Credit
+
+Each video costs its length, at $0.05 a minute, from the key's prepaid credit. When a video is refused with `402` (no credit left, or the video is longer than the credit), tell the user and offer a payment link:
+
+```sh
+bash <this skill's directory>/scripts/reelql.sh --topup <dollars, 5 to 500>
+```
+
+It prints a Stripe payment page for the user to open in a browser ($5 buys 100 minutes) and the minutes left. Never pay yourself, and don't pick an amount the user hasn't agreed to.
 
 ## What to tell the user
 
@@ -76,6 +86,7 @@ All times are seconds from the start of the video. A person's name appears only 
 
 - `400`: the URL was refused (private address, not http(s), a live stream, longer than 30 minutes, over 4 GB, or not a video). The reason is in `.detail`.
 - `401`: missing or wrong key.
+- `402`: not enough credit for this video. The reason says how many minutes it needs and how many are left; see Credit.
 - `429`: the key already has 2 jobs queued or running, for example from another session. Wait and run again.
 - `503`: ReelQL is busy. Wait the seconds in the `Retry-After` header (60) and submit again. While a job is `queued`, its `position` says how many jobs are ahead of it, counting itself.
 - `404` on a job: wrong id, older than a day, or the service restarted (jobs are kept in memory). Submit again.
