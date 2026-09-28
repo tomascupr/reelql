@@ -338,12 +338,12 @@ table{border-collapse:collapse;width:100%}
     <div>
       <p class="slate"><span class="rec" aria-hidden="true"></span>Video understanding for AI agents</p>
       <h1>Give your agent <em>eyes.</em></h1>
-      <p class="lede">Agents can read, but they can't watch. Send ReelQL a video link and it sends back one typed JSON document: scenes, speech, on-screen text, products and the emotional arc, each with its timestamp.</p>
+      <p class="lede">Agents can read, but they can't watch. Give ReelQL a video link and get back one typed JSON document: scenes, speech, on-screen text, products and the emotional arc, each with its timestamp.</p>
       <div class="cta">
         <a class="btn btn-ink" href="#start">Get a free key</a>
         <a class="btn btn-line" href="#screening">Watch it work</a>
       </div>
-      <p class="fine">10 free minutes of video, then $0.05 a minute. No sign-up.</p>
+      <p class="fine">Every key starts with 10 free minutes, and you don't need an account to make one.</p>
     </div>
     <aside class="sheet" aria-label="ReelQL at a glance">
       <header><span>Call sheet</span><span>ReelQL</span></header>
@@ -352,7 +352,7 @@ table{border-collapse:collapse;width:100%}
         <dt>Out</dt><dd>One JSON document, every field timestamped</dd>
         <dt>Length</dt><dd>Up to 30 minutes a video</dd>
         <dt>Speed</dt><dd>About 25 seconds for a 4-minute video</dd>
-        <dt>Price</dt><dd>$0.05 a minute, first 10 minutes free</dd>
+        <dt>Price</dt><dd>$0.05 a minute of video</dd>
         <dt>Runs on</dt><dd>Open models on our own GPUs</dd>
       </dl>
     </aside>
@@ -367,7 +367,7 @@ table{border-collapse:collapse;width:100%}
         <p class="kicker">Now screening · a real run, unedited</p>
         <h2 id="screening-h">Wing It! <small>3:58</small></h2>
       </div>
-      <p class="screen-note">Everything around the picture is ReelQL's JSON for this Blender Studio short, as it came back. <b>It watched the film in 22 seconds.</b></p>
+      <p class="screen-note">Everything around the picture comes from ReelQL's JSON for this Blender Studio short. <b>It watched the film in 22 seconds.</b></p>
     </div>
 
     <div class="stage">
@@ -418,7 +418,7 @@ table{border-collapse:collapse;width:100%}
     </div>
     <ol class="steps">
       <li><span class="num">01</span><h3>ReelQL watches</h3><p>Paste a public link. ReelQL fetches the video, transcribes it with speaker labels, watches it 30 seconds at a time and writes one JSON document.</p></li>
-      <li><span class="num">02</span><h3>Jev judges</h3><p><a href="https://docs.typesafe.ai">Jev</a>, TypeSafe's judgment model, reads text only. Give it the fields you care about and ask typed questions: is this on brief, is it brand-safe, which moment fits? It answers with probabilities.</p></li>
+      <li><span class="num">02</span><h3>Jev judges</h3><p><a href="https://docs.typesafe.ai">Jev</a>, TypeSafe's judgment model, reads only text, so it judges a video through ReelQL's fields. Ask it typed questions, such as whether a video is on brief or brand-safe, and it answers with probabilities.</p></li>
       <li><span class="num">03</span><h3>Your code decides</h3><p>Sort, filter, route or flag on those numbers instead of parsing prose.</p></li>
     </ol>
     <div class="prog">
@@ -449,7 +449,7 @@ table{border-collapse:collapse;width:100%}
       </figure>
       <div>
         <ol class="notes">
-          <li><span class="mk">1</span><span>A character gets a name only when the title, channel, on-screen text or transcript gives one. Otherwise ReelQL writes a label, because models make names up. "Enthusiastic wannabe-pilot" comes from the video's description.</span></li>
+          <li><span class="mk">1</span><span>A character gets a name only when the title, channel, on-screen text or transcript gives one. Otherwise ReelQL writes a label, such as "Grey Cat", because models make names up.</span></li>
           <li><span class="mk">2</span><span>Every time is in seconds from the start of the video.</span></li>
           <li><span class="mk">3</span><span><code>brand</code> and <code>advertiser</code> are <code>null</code> when nothing in the video supports them.</span></li>
           <li><span class="mk">4</span><span>Emotions come from a fixed list of 21, so you can compare arcs across videos. Intensity runs from 1 to 5.</span></li>
@@ -544,7 +544,7 @@ claude plugin install reelql@reelql
 export REELQL_API_KEY=<span class="s">&lt;your key&gt;</span>
 export TYPESAFE_API_KEY=<span class="s">&lt;your Jev key&gt;</span>   <span class="c"># optional: rankings and judgments</span></pre>
           </div>
-          <p>Then paste a link. <em>"Analyze this video &lt;url&gt;"</em> gets you a short brief, or ask something specific, like <em>"when does the product first appear?"</em> A Jev key comes from <a href="https://console.typesafe.ai">console.typesafe.ai</a>.</p>
+          <p><em>"Analyze this video &lt;url&gt;"</em> gets you a short brief. You can also ask something specific, like <em>"when does the product first appear?"</em> Jev keys come from <a href="https://console.typesafe.ai">console.typesafe.ai</a>.</p>
         </div>
         <div role="tabpanel" id="p-ai" aria-labelledby="tab-ai" hidden>
           <p>On Team and Enterprise plans: download <a href="https://github.com/tomascupr/reelql/releases/latest/download/reelql.zip">reelql.zip</a>, upload it under Settings → Capabilities → Skills, and paste your key when Claude asks.</p>
@@ -566,7 +566,7 @@ curl -s -H <span class="s">"$H"</span> $API/jobs/6b0550c3dc9f
       <div class="booth" id="booth">
         <header><span>Box office</span><span id="bo-acct"></span></header>
         <div class="body" id="bo-nokey">
-          <p>A key comes with 10 free minutes of video. No account, no card.</p>
+          <p>A key comes with 10 free minutes of video, without an account or a card.</p>
           <button class="btn btn-ink" type="button" id="newkey">Get a free key</button>
           <div class="or">or use a key you have</div>
           <form class="field" id="usekey" autocomplete="off">
@@ -611,7 +611,7 @@ curl -s -H <span class="s">"$H"</span> $API/jobs/6b0550c3dc9f
     <div class="sec-head">
       <p class="kicker">Pricing</p>
       <h2 id="pricing-h">Five cents <em>a minute.</em></h2>
-      <p class="sub">You pay for the length of the video. No subscription, no invoices.</p>
+      <p class="sub">You pay for the length of each video from prepaid credit. There is no subscription and no invoice.</p>
     </div>
     <div class="price">
       <div class="ticket" role="img" aria-label="Admit one minute of video: 5 cents. 10 minutes free with every key.">
@@ -619,7 +619,7 @@ curl -s -H <span class="s">"$H"</span> $API/jobs/6b0550c3dc9f
         <div class="stub"><b>10</b><span>Minutes<br>free</span></div>
       </div>
       <ul class="terms">
-        <li><b>Every new key gets 10 free minutes.</b> After that, credit is prepaid.</li>
+        <li><b>Every new key starts with 10 free minutes.</b></li>
         <li><b>A job costs the video's length</b>, rounded up to the second and taken from your credit when it starts. A job that fails costs nothing. <code>GET /balance</code> shows the minutes left.</li>
         <li><b>Top up $5 to $500</b> in whole dollars; $5 buys 100 minutes. People pay on a Stripe page, and Stripe adds VAT or sales tax where it applies.</li>
         <li><b>Agents can pay for themselves.</b> <code>POST /credits</code> speaks <a href="https://mpp.dev">MPP</a>, the Machine Payments Protocol: it answers <code>402</code> with a payment challenge, and an agent with an MPP wallet pays and retries.</li>
@@ -635,7 +635,6 @@ curl -s -H <span class="s">"$H"</span> $API/jobs/6b0550c3dc9f
         <li>When many jobs are waiting, a new one gets <code>503</code> with <code>Retry-After</code>. A queued job's status shows its place in the queue.</li>
         <li>ReelQL runs on a single GPU server, with no uptime promise. Jobs survive a restart of the service.</li>
         <li>ReelQL keeps the fetched video and the result on its server. Don't send anything you aren't allowed to share.</li>
-        <li>A person's name appears only when the title, channel, on-screen text or transcript contains it.</li>
         <li>The analysis runs on open models on our own GPUs, with no third-party AI APIs.</li>
       </ul>
     </div>
@@ -651,9 +650,9 @@ curl -s -H <span class="s">"$H"</span> $API/jobs/6b0550c3dc9f
       <dt>Built by</dt><dd><a href="https://x.com/tomcupr">@tomcupr</a><small>Send the videos it gets wrong: those are the ones that improve it.</small></dd>
       <dt>Judgment</dt><dd><a href="https://docs.typesafe.ai">Jev</a>, by TypeSafe<small>Not affiliated with ReelQL.</small></dd>
       <dt>Featuring</dt><dd><a href="https://studio.blender.org/films/wing-it/">Wing It!</a><small>© Blender Foundation | studio.blender.org, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Shown as published, with ReelQL's output beside it.</small></dd>
-      <dt>Source</dt><dd><a href="https://github.com/tomascupr/reelql">github.com/tomascupr/reelql</a><small>The skill, examples and docs. Star it to hear about releases.</small></dd>
+      <dt>Source</dt><dd><a href="https://github.com/tomascupr/reelql">github.com/tomascupr/reelql</a><small>The skill, examples and docs. Watch its releases for updates.</small></dd>
     </dl>
-    <p class="end">© 2026 ReelQL · No animals were harmed by the analysis</p>
+    <p class="end">© 2026 ReelQL</p>
   </div>
 </footer>
 
