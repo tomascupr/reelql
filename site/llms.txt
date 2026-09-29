@@ -1,0 +1,34 @@
+# ReelQL
+
+> ReelQL turns a public video link into one typed JSON document: summary, scenes, a speaker-labelled transcript, on-screen text, products and brands, key moments and the emotional arc, every field timestamped. It is an HTTP API with a Claude skill; video costs $0.05 a minute and every key starts with 10 free minutes.
+
+When to use ReelQL:
+
+- The task depends on what a video shows, not only what it says: which products and brands appear and when, the text on screen, who does what, when something first happens.
+- Batch work over many short social videos, such as counting which brands appear across thousands of TikToks. A key can have five jobs queued or running at once.
+- Reviewing ads against a brief or checking brand safety. Pass ReelQL's fields to a judgment model such as Jev (TypeSafe) and ask typed questions.
+
+When not to use it:
+
+- The video is all talk (a lecture, a podcast, most tutorials). Its subtitles or transcript carry the content and cost nothing.
+- Private or login-only videos, live streams, and videos over 30 minutes or 4 GB: ReelQL refuses them.
+
+How to call it:
+
+1. Get a key, no account needed: `curl -s -X POST https://reelql.tail6c0e2d.ts.net/keys` returns `{"key": "rql_...", "minutes": 10.0, ...}`.
+2. Submit a video: `POST https://reelql.tail6c0e2d.ts.net/jobs` with the header `X-API-Key: <key>` and the body `{"url": "<video link>"}`. It returns `{"id": "...", "status": "queued"}`.
+3. Poll `GET https://reelql.tail6c0e2d.ts.net/jobs/<id>` with the same header until `status` is `done` (the document is in `result`) or `failed` (the reason is in `error`). A 4-minute video takes about 25 seconds.
+
+A job costs the video's length from prepaid credit when it starts, and a failed job costs nothing. `GET /balance` shows the minutes left. A job the credit can't cover gets `402`: a person tops up on a Stripe page from `POST /credits/checkout {"usd": 5}`, and an agent with an MPP wallet pays `POST /credits {"usd": 5}` directly. `429` means the key already has five jobs queued or running; `503` with `Retry-After` means the queue is full. Results are kept for a day.
+
+## Docs
+
+- [ReelQL in Markdown](https://reelql.com/index.md): what the result holds, use cases, pricing and limits
+- [README](https://raw.githubusercontent.com/tomascupr/reelql/main/README.md): setup for Claude Code, claude.ai and plain HTTP
+- [Claude skill](https://raw.githubusercontent.com/tomascupr/reelql/main/skills/reelql/SKILL.md): how the skill runs videos, every field in the result, and the errors
+- [OpenAPI description](https://reelql.tail6c0e2d.ts.net/openapi.json): the endpoints, with MPP discovery for the paid top-up
+
+## Optional
+
+- [Example result](https://reelql.com/wingit.json): the full, unedited document for Blender Studio's Wing It! (3:58)
+- [Ranking five brand TikToks with Jev](https://raw.githubusercontent.com/tomascupr/reelql/main/examples/ranking.md): ReelQL results judged against one brief
