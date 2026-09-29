@@ -173,7 +173,7 @@ h1 em{color:var(--red)}
 .steps li{list-style:none;padding:26px 0 30px;border-bottom:1px solid var(--rule)}
 @media(min-width:900px){.steps li{padding:28px 32px 8px 0;border-bottom:0}.steps li+li{padding-left:32px;border-left:1px solid var(--rule)}}
 .num{font:italic 400 64px/1 var(--serif);color:var(--red)}
-.steps h3{font:400 32px/1.1 var(--serif);margin:14px 0 10px}
+.steps h3,.use h3{font:400 32px/1.1 var(--serif);margin:14px 0 10px}
 .steps p{color:var(--ink-2)}
 .prog{margin-top:72px;display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
 @media(min-width:900px){.prog{grid-template-columns:1fr 1.6fr;align-items:start}}
@@ -186,6 +186,15 @@ h1 em{color:var(--red)}
 .prog .d{flex:1;border-bottom:1.5px dotted var(--rule-2);transform:translateY(-5px);min-width:16px}
 .prog .n{font:500 14px/1 var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 .prog .n b{font-weight:600;color:var(--red-ink)}
+
+/* uses */
+.uses{display:grid;grid-template-columns:minmax(0,1fr);border-top:1.5px solid var(--ink)}
+@media(min-width:900px){.uses{grid-template-columns:repeat(2,minmax(0,1fr))}.use:nth-child(odd){padding-right:32px}.use:nth-child(even){padding-left:32px;border-left:1px solid var(--rule)}}
+.use{padding:26px 0 30px;border-bottom:1px solid var(--rule)}
+.use h3+p{color:var(--ink-2)}
+.use .f{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.use.skip .kicker{color:var(--ink-3)}
+.use.skip h3{color:var(--ink-2)}
 
 /* document */
 .doc{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
@@ -204,7 +213,7 @@ h1 em{color:var(--red)}
 .notes{list-style:none;display:grid;border-top:1.5px solid var(--ink)}
 .notes li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:16px 0;border-bottom:1px solid var(--rule);color:var(--ink-2)}
 .notes li .mk{margin-top:3px}
-.notes code,.terms code{font-size:.88em;background:rgba(21,19,15,.06);padding:1px 5px;border-radius:2px;color:var(--ink)}
+.notes code,.terms code,.use code{font-size:.88em;background:rgba(21,19,15,.06);padding:1px 5px;border-radius:2px;color:var(--ink)}
 .also{margin-top:22px;font-size:15px;color:var(--ink-2)}
 
 /* jev */
@@ -436,6 +445,39 @@ table{border-collapse:collapse;width:100%}
     </div>
   </section>
 
+  <section class="sec" id="uses" aria-labelledby="uses-h">
+    <div class="sec-head">
+      <p class="kicker">What it's for</p>
+      <h2 id="uses-h">For videos where the <em>picture</em> matters.</h2>
+      <p class="sub">ReelQL reads what's on screen: products, logos, text and what people do. Speech is in the document too, but for a video that is all talk, a transcript does the job.</p>
+    </div>
+    <div class="uses">
+      <article class="use">
+        <p class="kicker">Brand scouting</p>
+        <h3>Spot new brands on TikTok</h3>
+        <p>A grocery buyer runs tens of thousands of TikToks through ReelQL to find brands worth stocking. Count the brands in each week's results: the names that keep climbing are the shortlist. A 30-second TikTok costs 2.5 cents, and a key runs five videos at a time.</p>
+        <p class="f"><code>brands</code> <code>products[].appearances</code> <code>on_screen_text</code></p>
+      </article>
+      <article class="use">
+        <p class="kicker">Ad review</p>
+        <h3>Check a cut against the brief</h3>
+        <p>Does the product show up early, and does the tone fit? ReelQL turns the video into fields and <a href="#jev">Jev</a> answers each question with a probability, so you can sort a stack of ads instead of watching each one.</p>
+        <p class="f"><code>key_moments</code> <code>story.tone</code> <code>products</code> <code>transcript</code></p>
+      </article>
+      <article class="use">
+        <p class="kicker">Creator vetting</p>
+        <h3>See what your brand would sit next to</h3>
+        <p>Before you sponsor a creator, run their recent posts. The transcript, the text on screen and what happens in each scene come back with timestamps, so you can check anything that looks off.</p>
+        <p class="f"><code>transcript</code> <code>on_screen_text</code> <code>scenes[].action</code></p>
+      </article>
+      <article class="use skip">
+        <p class="kicker">Skip it when</p>
+        <h3>Everything is said out loud</h3>
+        <p>Lectures, podcasts and most tutorials live in their audio. Their subtitles are free and tell you as much, so start there. ReelQL is worth paying for when what matters is on screen.</p>
+      </article>
+    </div>
+  </section>
+
   <section class="sec" id="output" aria-labelledby="output-h">
     <div class="sec-head">
       <p class="kicker">The output</p>
@@ -631,7 +673,7 @@ curl -s -H <span class="s">"$H"</span> $API/jobs/6b0550c3dc9f
       <ul>
         <li>Any public video that yt-dlp can fetch (YouTube, TikTok, Vimeo and many more), or a direct link to a media file. Nothing behind a login, and no live streams.</li>
         <li>Up to 30 minutes and 4 GB per video.</li>
-        <li>Two jobs queued or running per key. Results are kept for a day.</li>
+        <li>Five jobs queued or running per key. Results are kept for a day.</li>
         <li>When many jobs are waiting, a new one gets <code>503</code> with <code>Retry-After</code>. A queued job's status shows its place in the queue.</li>
         <li>ReelQL runs on a single GPU server, with no uptime promise. Jobs survive a restart of the service.</li>
         <li>ReelQL keeps the fetched video and the result on its server. Don't send anything you aren't allowed to share.</li>

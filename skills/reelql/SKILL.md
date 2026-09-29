@@ -48,7 +48,19 @@ If they only shared a link or said "analyze this", give this brief, in this orde
 5. **Key moments**: at most 5 lines, formatted as `m:ss` then what happens.
 6. **On-screen text** worth knowing (dates, prices, calls to action), and the views and likes if the platform reports them.
 
-Keep it under about 20 lines, then offer one or two follow-ups the data can answer (the full transcript, scene by scene, the cast).
+Keep it under about 20 lines. Then suggest one next step that fits the video, in a sentence:
+
+- An ad or a sponsored post: rank it against their brief with Jev, or check it for brand safety (below).
+- A social video with products or brands on screen: offer to run more links they send (the creator's other posts, a hashtag, a competitor) and list the brands and products that keep appearing.
+- Mostly talk (a lecture, a podcast, a tutorial): say that the transcript carries it, and offer the transcript or a summary of what was said.
+
+Or offer a follow-up about this video that the data can answer: the full transcript, scene by scene, the cast.
+
+How many of the videos each brand appears in, most first:
+
+```bash
+jq -r '.result.analysis | [(.brands // [])[], ((.products // [])[] | .brand // empty)] | unique[]' reelql-*.json | sort | uniq -c | sort -rn
+```
 
 ## Judge or rank videos with Jev (optional)
 
@@ -87,7 +99,7 @@ All times are seconds from the start of the video. A person's name appears only 
 - `400`: the URL was refused (private address, not http(s), a live stream, longer than 30 minutes, over 4 GB, or not a video). The reason is in `.detail`.
 - `401`: missing or wrong key.
 - `402`: not enough credit for this video. The reason says how many minutes it needs and how many are left; see Credit.
-- `429`: the key already has 2 jobs queued or running, for example from another session. Wait and run again.
+- `429`: the key already has 5 jobs queued or running, for example from another session. Wait and run again.
 - `503`: ReelQL is busy. Wait the seconds in the `Retry-After` header (60) and submit again. While a job is `queued`, its `position` says how many jobs are ahead of it, counting itself.
 - `404` on a job: wrong id, older than a day, or the service restarted (jobs are kept in memory). Submit again.
 - A `failed` job: `.error` says why (for example a deleted or region-blocked post).
