@@ -15,7 +15,7 @@ Run the script in this skill's directory, in the foreground (it finishes in a mi
 bash <this skill's directory>/scripts/reelql.sh "<url>" ["<url>" ...]
 ```
 
-It saves each result as `reelql-1.json`, `reelql-2.json`, ... in URL order, two videos at a time, and prints `done` or `failed` with the reason for each one. A 4-minute video takes about 25 s, a 15-minute one about a minute. It needs `curl` and `jq`.
+It saves each result as `reelql-1.json`, `reelql-2.json`, ... in URL order, five videos at a time, and prints `done` or `failed` with the reason for each one. A 4-minute video takes about 25 s, a 15-minute one about a minute. It needs `curl` and `jq`.
 
 A result is large: the transcript alone can be tens of kB. Read only the parts you need with `jq`, for example:
 
