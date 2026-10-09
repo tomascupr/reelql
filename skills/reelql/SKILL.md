@@ -86,7 +86,7 @@ It prints a table ranked by the probability that each video is on brief, with ho
   - `story`: premise, tone, themes, arc
   - `characters[]`: `name_or_label`, appearance, role, first_seen_s
   - `audio`: music, sound effects, voiceover, tone
-  - `advertiser`, `brands[]`, `products[]` (with each appearance's time and prominence)
+  - `advertiser`, `brands[]`, `products[]` (with each appearance's time and prominence: high, medium or low)
   - `chapters[]`: one per 30 s, `{start_s, end_s, title, summary}`
   - `scenes[]`, `key_moments[]`
   - `emotional_arc[]`: what the viewer is meant to feel, `{t_s, emotion, intensity 1-5, cue}`

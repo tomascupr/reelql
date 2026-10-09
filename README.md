@@ -125,7 +125,7 @@ An excerpt from the Starbucks TikTok in the demo:
     "advertiser": "Starbucks",
     "brands": ["Starbucks", "Frappuccino"],
     "products": [{ "name": "Starbucks Black Cat Frappuccino", "brand": "Starbucks", "category": "Beverage",
-                   "appearances": [{ "t_s": 3.0, "prominence": "Central focus of the latter part of the video." }] }],
+                   "appearances": [{ "t_s": 3.0, "prominence": "high" }] }],
     "emotional_arc": [
       { "t_s": 0.0, "emotion": "curiosity",    "intensity": 3, "cue": "Mysterious appearance of the black cat" },
       { "t_s": 3.0, "emotion": "anticipation", "intensity": 4, "cue": "Reveal of the Starbucks cup" },
