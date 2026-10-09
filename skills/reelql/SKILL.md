@@ -27,7 +27,7 @@ jq -r '.result.speech.transcript[] | "[\(.start)] \(.speaker): \(.text)"' reelql
 
 ## Credit
 
-Each video costs its length, at $0.05 a minute, from the key's prepaid credit. When a video is refused with `402` (no credit left, or the video is longer than the credit), tell the user and offer a payment link:
+Each video costs its length (a TikTok photo post: 3 seconds a photo), at $0.05 a minute, from the key's prepaid credit. When a video is refused with `402` (no credit left, or the video is longer than the credit), tell the user and offer a payment link:
 
 ```sh
 bash <this skill's directory>/scripts/reelql.sh --topup <dollars, 5 to 500>
@@ -79,7 +79,7 @@ It prints a table ranked by the probability that each video is on brief, with ho
 
 `.result` has `schema_version`, then:
 
-- `video`: title, channel, duration_s, platform, url, upload_date, description (the caption), tags, music (TikTok sound), stats (views, likes, comments, as reported at fetch time; `null` where the platform does not give one).
+- `video`: title, channel, duration_s, platform, url, upload_date, description (the caption), tags, music (TikTok sound), stats (views, likes, comments, as reported at fetch time; `null` where the platform does not give one). `slides` is a TikTok photo post's photo count (null for a video); a photo post is read as a slideshow, 3 s a photo, and its times are slideshow seconds.
 - `speech.transcript[]`: `{start, end, speaker, text}`, speakers labelled `SPEAKER_00`...
 - `analysis`:
   - `summary`
@@ -96,7 +96,7 @@ All times are seconds from the start of the video. A person's name appears only 
 
 ## Errors
 
-- `400`: the URL was refused (private address, not http(s), a live stream, longer than 30 minutes, over 4 GB, or not a video). The reason is in `.detail`.
+- `400`: the URL was refused (private address, not http(s), a live stream, longer than 30 minutes, over 4 GB, not a video, or a photo post other than TikTok's). The reason is in `.detail`.
 - `401`: missing or wrong key.
 - `402`: not enough credit for this video. The reason says how many minutes it needs and how many are left; see Credit.
 - `429`: the key already has 5 jobs queued or running, for example from another session. Wait and run again.

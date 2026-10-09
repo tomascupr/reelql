@@ -2,7 +2,7 @@
 
 Agents can read, but they can't watch. Give ReelQL a public video link and get back one typed JSON document: scenes, speech, on-screen text, products and the emotional arc, each with its timestamp. It is an HTTP API with a Claude skill. Every key starts with 10 free minutes, then video costs $0.05 a minute.
 
-- In: a public video link (YouTube, TikTok, Vimeo and anything else yt-dlp can fetch) or a direct media file
+- In: a public video link (YouTube, TikTok, Vimeo and anything else yt-dlp can fetch) or a direct media file. TikTok photo posts work too, read as a slideshow
 - Out: one JSON document, every field timestamped
 - Length: up to 30 minutes and 4 GB a video
 - Speed: about 25 seconds for a 4-minute video
@@ -69,7 +69,7 @@ On claude.ai (Team and Enterprise), upload https://github.com/tomascupr/reelql/r
 
 ## Pricing
 
-- $0.05 per minute of video, charged by the video's length rounded up to the second, from prepaid credit. A job that fails costs nothing.
+- $0.05 per minute of video, charged by the video's length rounded up to the second, from prepaid credit. A TikTok photo post counts 3 seconds a photo. A job that fails costs nothing.
 - Every new key starts with 10 free minutes. Top up $5 to $500 in whole dollars; $5 buys 100 minutes.
 - People pay on a Stripe page (`POST /credits/checkout`), where Stripe adds VAT or sales tax where it applies. Agents can pay over MPP, the Machine Payments Protocol (`POST /credits`).
 - `GET /balance` shows the minutes left.

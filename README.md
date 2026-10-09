@@ -146,6 +146,7 @@ The full document also has `story`, `characters`, `audio`, `chapters` (one per 3
 ## Limits
 
 - Any public video that yt-dlp can fetch (YouTube, TikTok, Vimeo and many more), or a direct link to a media file.
+- TikTok photo posts, read as a slideshow: each photo for 3 seconds over the post's music, so a post costs 3 seconds a photo and `video.slides` holds the photo count (null for a video). Photo posts on other sites, such as Instagram carousels, are refused.
 - Up to 30 minutes and 4 GB per video. No live streams, and nothing behind a login.
 - Five jobs queued or running per key. Results are kept for a day.
 - When many jobs are waiting, a new one gets `503` with `Retry-After`; try again after that many seconds. A queued job's status shows its `position` in the queue.

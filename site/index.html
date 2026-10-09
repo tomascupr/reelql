@@ -380,7 +380,7 @@ table{border-collapse:collapse;width:100%}
     <aside class="sheet" aria-label="ReelQL at a glance">
       <header><span>Call sheet</span><span>ReelQL</span></header>
       <dl>
-        <dt>In</dt><dd>A public video link: YouTube, TikTok, Vimeo and more, or a direct media file</dd>
+        <dt>In</dt><dd>A public video link: YouTube, TikTok (photo posts too), Vimeo and more, or a direct media file</dd>
         <dt>Out</dt><dd>One JSON document, every field timestamped</dd>
         <dt>Length</dt><dd>Up to 30 minutes a video</dd>
         <dt>Speed</dt><dd>About 25 seconds for a 4-minute video</dd>
@@ -685,7 +685,7 @@ curl -s -H <span class="s">"$H"</span> $API/jobs/6b0550c3dc9f
       </div>
       <ul class="terms">
         <li><b>Every new key starts with 10 free minutes.</b></li>
-        <li><b>A job costs the video's length</b>, rounded up to the second and taken from your credit when it starts. A job that fails costs nothing. <code>GET /balance</code> shows the minutes left.</li>
+        <li><b>A job costs the video's length</b>, rounded up to the second and taken from your credit when it starts. A TikTok photo post counts 3 seconds a photo. A job that fails costs nothing. <code>GET /balance</code> shows the minutes left.</li>
         <li><b>Top up $5 to $500</b> in whole dollars; $5 buys 100 minutes. People pay on a Stripe page, and Stripe adds VAT or sales tax where it applies.</li>
         <li><b>Agents can pay for themselves.</b> <code>POST /credits</code> speaks <a href="https://mpp.dev">MPP</a>, the Machine Payments Protocol: it answers <code>402</code> with a payment challenge, and an agent with an MPP wallet pays and retries.</li>
       </ul>
